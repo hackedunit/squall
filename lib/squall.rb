@@ -20,6 +20,7 @@ module Squall
   autoload :Transaction,    'squall/transaction'
   autoload :NetworkJoin,    'squall/network_join'
   autoload :NetworkInterface, 'squall/network_interface'
+  autoload :Disk,           'squall/disk'
 
   extend self
 
