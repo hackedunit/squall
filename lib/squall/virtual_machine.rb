@@ -184,5 +184,11 @@ module Squall
       response = request(:post, "/virtual_machines/#{id}/reboot.json?mode=#{mode}")
       response['virtual_machine']
     end
+    
+    # Get console related information of a VirtualMachine
+    def console(id)
+      response = request(:get, "/virtual_machines/#{id}/console.json")
+      response['remote_access_session']
+    end
   end
 end
