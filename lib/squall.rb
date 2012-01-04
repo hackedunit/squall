@@ -21,6 +21,7 @@ module Squall
   autoload :NetworkJoin,    'squall/network_join'
   autoload :NetworkInterface, 'squall/network_interface'
   autoload :Disk,           'squall/disk'
+  autoload :Backup,         'squall/backup'
 
   extend self
 
