@@ -2,12 +2,6 @@ module Squall
   # Handles IP assignments for virtual machines
   class IpAddressJoin < Base
 
-    # OnApp uses params[:ip_address] for joins, so we need to override
-    # key_for_class accordingly.
-    def key_for_class
-      :ip_address
-    end
-
     # Get the list of IP address assignments for a particular VM
     #
     # ==== Options
