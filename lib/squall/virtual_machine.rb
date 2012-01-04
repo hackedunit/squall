@@ -162,8 +162,8 @@ module Squall
     end
 
     # Boot a VirtualMachine
-    def startup(id)
-      response = request(:post, "/virtual_machines/#{id}/startup.json")
+    def startup(id, mode = '')
+      response = request(:post, "/virtual_machines/#{id}/startup.json?mode=#{mode}")
       response['virtual_machine']
     end
 
@@ -180,8 +180,8 @@ module Squall
     end
 
     # Reboot a VirtualMachine
-    def reboot(id)
-      response = request(:post, "/virtual_machines/#{id}/reboot.json")
+    def reboot(id, mode = '')
+      response = request(:post, "/virtual_machines/#{id}/reboot.json?mode=#{mode}")
       response['virtual_machine']
     end
   end
