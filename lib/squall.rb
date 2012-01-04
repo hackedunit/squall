@@ -19,6 +19,7 @@ module Squall
   autoload :Statistic,      'squall/statistic'
   autoload :Transaction,    'squall/transaction'
   autoload :NetworkJoin,    'squall/network_join'
+  autoload :NetworkInterface, 'squall/network_interface'
 
   extend self
 
