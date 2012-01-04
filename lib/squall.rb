@@ -18,6 +18,7 @@ module Squall
   autoload :VirtualMachine, 'squall/virtual_machine'
   autoload :Statistic,      'squall/statistic'
   autoload :Transaction,    'squall/transaction'
+  autoload :NetworkJoin,    'squall/network_join'
 
   extend self
 
