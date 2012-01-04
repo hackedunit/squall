@@ -92,7 +92,6 @@ module Squall
                   :cpus,
                   :cpu_shares,
                   :primary_disk_size,
-                  :cpu_shares,
                   :swap_disk_size,
                   :primary_network_id,
                   :required_automatic_backup,
@@ -103,7 +102,8 @@ module Squall
                   :note,
                   :allowed_hot_migrate,
                   :template_id,
-                  :initial_root_password
+                  :initial_root_password,
+                  :allow_migration
       ]
       params.accepts(optional).validate! options
       request(:put, "/virtual_machines/#{id}.json", default_params(options))
